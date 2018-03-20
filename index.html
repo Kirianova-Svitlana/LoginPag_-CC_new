@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="CallCriteriaLoginPage">
+		<title>Callcriteria Login Page</title>
+		<link rel="stylesheet" href="build/styles.css">
+		<!--  Material+Icons -->
+    	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      	rel="stylesheet">
+		<script src="build/bundle.js"></script>
+	</head>
+	<body>
+		<div class='login-page-layout'>
+			<div class='logo-conteiner'>
+				<div class='background' id='background'></div>
+			</div>
+			<div class='login-form'>
+				<div class='form'>
+					<div class='form-name'>Sign In</div>
+					<div class='input-block'>
+						<label for="login">Login</label>
+						<input
+							type="text"
+							name="login"
+							id="login"
+							value="login" />
+					</div>
+					<div class='input-block'>
+						<label for="password">Password</label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							value="password" />
+					</div>
+					<div class='options'>
+						<div class='check-input'>
+							<!-- se this icon if check boxs is checked -->
+							<div class='icon'>
+								<i class="material-icons">check_box</i>
+							</div>
+								<!-- use this icon if check boxs isn't checked -->
+								<!-- <div class='icon'>
+									 <i class="material-icons">check_box_outline_blank</i>
+								</div> -->
+							<div class='text'>Keep me logged in</div>
+						</div>
+						<div class='link'><a href="">Forgot password?</a></div>
+					</div>
+					<div class='button'>Sign In</div>
+				</div>
+			</div>
+		</div>
+		<script>
+            (function () {
+                var elementBackground = document.getElementById('background')
+                var host = location.hostname.split('.')
+                let pageName = host[host.length - 2].toUpperCase()
+                if (pageName === 'ANOMALYSQUARED') {
+                	elementBackground.className += " anomaly"
+                } else if (pageName === 'EDUMAXIMIZER') {
+                	elementBackground.className += " eduMax";
+                } else if (pageName === 'CALLSOURCE') {
+                	elementBackground.className += " logoSour"
+                } else if (pageName === 'INQUIRYCOMPLIANCE') {
+                	elementBackground.className += " logoedu"
+                }
+                console.log('====>', elementBackground, host)
+            })()
+        </script>
+	</body>
+</html>

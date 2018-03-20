@@ -1,0 +1,73 @@
+.header {
+	.menu {
+		margin: auto;
+		height: 48px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		.menu-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: auto;
+			font-size: $size-normal;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.43;
+			letter-spacing: normal;
+			text-align: left;
+			margin-right: 24px;
+			color: $header;
+			a {
+				color: $header;
+				text-decoration: none;
+				&:visited {
+				    color: $header;
+				}
+				&:hover {
+				    font-size: $size-normal;
+					font-weight: bold;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					text-align: left;
+					color: $row-title;
+					cursor: pointer;
+				}
+				&:active {
+				    font-size: $size-normal;
+					font-weight: bold;
+					font-style: normal;
+					font-stretch: normal;
+					letter-spacing: normal;
+					text-align: left;
+					color: $row-title;
+					cursor: pointer;
+				}
+			}
+			&.docum {
+				width: 206px;
+				margin-right: 55px;
+			}
+			&.icon {
+				width: 24px;
+				margin-right: 9px;
+				background-image: url("../images/callcritetia-copy.svg");
+				background-repeat: no-repeat;
+				background-position-y: center;
+			}
+			&:active,
+			&:hover {
+				font-size: $size-normal;
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: $row-title;
+				cursor: pointer;
+			}
+		}
+	}
+}

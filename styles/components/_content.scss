@@ -1,0 +1,195 @@
+.content {
+	.content-header {
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.left{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.logo {
+				width: 195px;
+				height: 48px;
+				background-image: url("../images/logo.svg");
+				margin-bottom: 8px;
+			}
+			.text-title {
+				height: 28px;
+				font-size: $size-sm-medium;
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.56;
+				letter-spacing: normal;
+				text-align: left;
+				color: $row-title;
+			}
+		}
+		.right {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: right;
+			.date {
+				font-size: $size-xs;
+				font-weight: normal;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.6;
+				letter-spacing: normal;
+				text-align: right;
+				color: $table-days-name-color;
+				&:first-of-type {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+	.section {
+		margin-top: 36px;
+		.section-name {
+			height: 32px;
+			font-size: 21px;
+			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.52;
+			letter-spacing: normal;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		.section-name-sm {
+			height: 20px;
+			font-size: 14px;
+			font-weight: bold;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.43;
+			letter-spacing: normal;
+			text-align: left;;
+			margin-bottom: 20px;
+		}
+		.section-text {
+			font-size: $size-normal;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.43;
+			letter-spacing: normal;
+			text-align: left;
+			margin-bottom: 20px;
+			a {
+				color: $header;
+				&:visited {
+				    color: $header;
+				}
+				&:hover {
+				    background-color: $xlight-grey;
+				}
+				&:active {
+				    background-color: $xlight-grey;
+				}
+			}
+		}
+		.table {
+			width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+			.table-header {
+				border: 1px solid $xlight-grey;
+				background-color: $background-grey;
+			}
+			.table-row {
+				border: 1px solid $xlight-grey;
+				border-top: none;
+			}
+			.table-header,
+			.table-row {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.table-cell {
+					padding: 8px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					font-size: $size-xs;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.6;
+					letter-spacing: normal;
+					text-align: left;
+					color: $table-days-name-color;
+					// text-transform: capitalize;
+					&.uri {
+						width: 20%;
+						border-right: 1px solid $xlight-grey;
+						text-transform: uppercase;
+					}
+					&.method {
+						width: 10%;
+						border-right: 1px solid $xlight-grey;
+					}
+					&.description {
+						width: 70%;
+					}
+					&.name {
+						width: 21%;
+						border-right: 1px solid $xlight-grey;
+					}
+					&.type {
+						width: 18%;
+						border-right: 1px solid $xlight-grey;
+					}
+					&.size {
+						width: 6%;
+						border-right: 1px solid $xlight-grey;
+					}
+					&.required {
+						width: 8%;
+						border-right: 1px solid $xlight-grey;
+					}
+					&.comments {
+						width: 51%;
+					}
+				}
+			}
+			.table-row {
+				.table-cell {
+					color: $row-title;
+					font-size: $size-normal;
+					&.uri {
+						text-transform: capitalize;
+					}
+					&.method {
+						text-transform: uppercase;
+						color: $header;
+					}
+					&.description,
+					&.comments {
+						text-transform: none;
+					}
+				}
+			}
+		}
+		.url-box {
+			border: 1px solid $xlight-grey;
+			border-radius: 4px;
+			padding: 6px 16px;
+			width: 100%;
+			font-family: 'Inconsolata', monospace;
+			font-size: 14px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.43;
+			letter-spacing: 1px;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+	}
+}

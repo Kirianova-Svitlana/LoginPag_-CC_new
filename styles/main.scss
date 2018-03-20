@@ -1,0 +1,208 @@
+@import 'base/colors';
+@import 'base/helpers';
+@import 'base/typography';
+
+
+*{
+  /*border: 1px solid;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*-----BODY----------------------------*/
+body{
+  background-color: #34495e;
+  color: #182128;
+  font: 14px/20px ;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  overflow: scroll;
+  margin: 0;
+  padding:0;
+}
+
+.login-page-layout {
+  overflow: auto;
+  min-width: 1070px;
+  background-color: #34495e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/*-----background----------------------------*/
+.login-page-layout .background {
+  height: 100%;
+  width: 100%;
+  background: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.login-page-layout .anomaly {
+  height: 100%;
+  width: 100%;
+  background: url(../images/anomaly.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.login-page-layout .logoedu {
+  height: 100%;
+  width: 100%;
+  background: url(../images/logoedu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.login-page-layout .eduMax {
+  height: 100%;
+  width: 100%;
+  background: url(../images/eduMax.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.login-page-layout .logoSour {
+  height: 100%;
+  width: 100%;
+  background: url(../images/logoSour.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.login-page-layout .background img {
+  height: 100%px;
+}
+
+.logo-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+  height: 100%;
+  margin: auto;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+/*-----form----------------------------*/
+
+.form {
+  width: 480px;
+  height: 432px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.5);
+  padding: 80px;
+  color: #182128;
+}
+.form-name {
+  font-size: 27px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.48;
+  letter-spacing: normal;
+  text-align: left;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block label {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+.input-block input{
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  background-color: white;
+  border: solid 1px #e5e5e5;
+  padding: 8px 16px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.form .button {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  color: white;
+  background-color: #149bdf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 16px;
+  outline: none;
+}
+.form .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.link a{
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #149bdf;
+}
+.check-input {
+  display: flex;
+  flex-direction: row;
+}
+.check-input .text {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  margin-left: 12px;
+  letter-spacing: normal;
+  text-align: left;
+}
+.check-input .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.check-input .icon .material-icons {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  color: #149bdf;
+  font-size: 16px;
+}
+

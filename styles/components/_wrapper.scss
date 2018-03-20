@@ -1,0 +1,34 @@
+#wrapper {
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: left;
+	color: #182128;
+    .wrapper-body {
+		width: 1270px;
+		height: 100%;
+		margin: auto;
+		.header {
+			position: absolute;
+			width: 1270px;
+    		top: 0;
+			height: 48px;
+			background-color: $white;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 0 $xlight-grey;
+		}
+		.content {
+			width: 880px;
+			height: auto;
+			margin: 32px auto;
+			margin-top: 78px;
+			border-radius: 4px;
+			background-color: $white;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+			padding: 40px 32px 40px 48px;
+		}
+    }
+}
