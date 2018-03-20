@@ -57,18 +57,19 @@
 		<script>
             (function () {
                 var elementBackground = document.getElementById('background')
+                var element = document.getElementsByClassName('background')
                 var host = location.hostname.split('.')
-                let pageName = host[host.length - 2].toUpperCase()
-                if (pageName === 'ANOMALYSQUARED') {
-                	elementBackground.className += " anomaly"
-                } else if (pageName === 'EDUMAXIMIZER') {
-                	elementBackground.className += " eduMax";
-                } else if (pageName === 'CALLSOURCE') {
-                	elementBackground.className += " logoSour"
-                } else if (pageName === 'INQUIRYCOMPLIANCE') {
-                	elementBackground.className += " logoedu"
+                let hostName = host[host.length - 2].toUpperCase()
+                // elementBackground.style.backgroundImage = "url('./images/hostName/logoBackground.svg')"
+                if (hostName === 'ANOMALYSQUARED') {
+                	element.className += " anomaly"
+                } else if (hostName === 'EDUMAXIMIZER') {
+                	element.className += " eduMax";
+                } else if (hostName === 'CALLSOURCE') {
+                	element.className += " logoSour"
+                } else if (hostName === 'INQUIRYCOMPLIANCE') {
+                	element.className += " logoedu"
                 }
-                console.log('====>', elementBackground, host)
             })()
         </script>
 	</body>
